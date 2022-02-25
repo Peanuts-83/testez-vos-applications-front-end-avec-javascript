@@ -10,11 +10,9 @@ const checkUserEmailInput = () => {
 
     const isUserEmailValid = $userMailInput.value.toLowerCase() === USER_EMAIL
 
-    if (isUserEmailValid) {
+    isUserEmailValid ?
         $userEmailErrorMSg.classList.add('hidden')
-    } else {
-        $userEmailErrorMSg.classList.remove('hidden')
-    }
+        : $userEmailErrorMSg.classList.remove('hidden')
 
     return isUserEmailValid
 }
@@ -26,11 +24,10 @@ const checkUserPasswordInput = () => {
 
     const isUserPasswordValid = $userPasswordInput.value.toLowerCase() === USER_PASSWORD
 
-    if (isUserPasswordValid) {
+    isUserPasswordValid ?
         $userPasswordErrorMSg.classList.add('hidden')
-    } else {
-        $userPasswordErrorMSg.classList.remove('hidden')
-    }
+        : $userPasswordErrorMSg.classList.remove('hidden')
+
 
     return isUserPasswordValid
 }
