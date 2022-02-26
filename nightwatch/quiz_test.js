@@ -7,6 +7,7 @@ module.exports = {
             .setValue('input[type=email]', 'thomas@facada.com')
             .click('button[type=submit]')
             .assert.visible('.user-email-error-msg')
+            .clearValue('input[type=email]')
             .setValue('input[type=email]', 'thomas@facadia.com')
             .click('button[type=submit]')
             .assert.not.visible('.user-email-error-msg')
