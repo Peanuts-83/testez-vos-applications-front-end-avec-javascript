@@ -10,6 +10,7 @@
     "@testing-library/user-event": "^13.1.9",
     "babel-jest": "^27.0.2",
     "chromedriver": "^91.0.1",
+    "cypress": "^9.5.1",
     "geckodriver": "^2.0.0",
     "jest": "^27.0.3",
     "jest-html-reporter": "^3.4.1",
